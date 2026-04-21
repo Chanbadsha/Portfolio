@@ -19,8 +19,10 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <>
           <DefaultBg top={3}>
-            <NavBar />
-            {children}
+            <div className="fixed top-0 left-0 z-40 w-full">
+              <NavBar />
+            </div>
+            <main className="mt-16"> {children}</main>
           </DefaultBg>
         </>
       </body>

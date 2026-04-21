@@ -29,7 +29,7 @@ const NavBar = () => {
   );
 
   return (
-    <nav className="sticky top-0 z-40 w-full border-b border-gray-700 bg-transparent ">
+    <nav className="sticky top-0 z-40 w-full border-b border-gray-700 bg-transparent backdrop-blur-2xl ">
       <header className="mx-auto flex h-16 container items-center justify-between px-6">
         <div className="flex items-center gap-4">
           <button
