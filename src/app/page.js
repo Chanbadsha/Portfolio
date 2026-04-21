@@ -1,14 +1,8 @@
 import DefaultBg from "@/components/DefaultBg";
+import NavBar from "@/components/NavBar";
 
 const HomePage = () => {
-  return (
-    <div>
-      <DefaultBg top={3}>
-        {" "}
-        <h2>Hello</h2>
-      </DefaultBg>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default HomePage;

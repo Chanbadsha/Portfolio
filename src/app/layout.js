@@ -1,5 +1,7 @@
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import NavBar from "@/components/NavBar";
+import DefaultBg from "@/components/DefaultBg";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -14,7 +16,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable}  h-full antialiased`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <>
+          <DefaultBg top={3}>
+            <NavBar />
+            {children}
+          </DefaultBg>
+        </>
+      </body>
     </html>
   );
 }
