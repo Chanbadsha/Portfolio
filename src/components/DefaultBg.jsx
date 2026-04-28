@@ -1,19 +1,19 @@
-const DefaultBg = ({ children, top = 32 }) => {
+const DefaultBg = ({ children }) => {
   return (
     <div className="relative w-full min-h-screen overflow-x-hidden bg-[#050508]">
       {/* Ambient blobs */}
       <div className="pointer-events-none fixed inset-0">
         <div
-          className="absolute -left-20 rounded-full bg-violet-600 opacity-20 blur-[100px]"
+          className="absolute -left-20 rounded-full bg-violet-600 opacity-10 blur-[100px]"
           style={{
-            top: `-${top}px`,
+            top: 12,
             width: "32rem",
             height: "32rem",
           }}
         />
 
         <div
-          className="absolute -right-24 top-16 rounded-full bg-cyan-500 opacity-20 blur-[90px]"
+          className="absolute -right-24 top-16 rounded-full bg-cyan-500 opacity-10 blur-[90px]"
           style={{
             width: "28rem",
             height: "28rem",
